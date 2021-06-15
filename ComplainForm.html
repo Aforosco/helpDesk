@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Help Desk Log In</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="./css/style.css">
+	</head>
+
+<body>
+
+                    <h3 class="title">IT HELP DESK PAGE</h3>
+<div>
+    <form name="form1" id="form1" action="/action_page.php">
+        STAFF NAME: <select name="name" id="name">
+          <option class="form-control" value="" selected="selected">Select NAME</option>
+        </select>
+        <br><br>
+        DEPARTMENT: <select name="Department" id="Department">
+          <option value=""  class ="form-control" selected="selected">Please select Department</option>
+        </select>
+        <br><br>
+        EMAIL: <select name="EMAIL" id="EMAIL">
+          <option value="" class="form-control" selected="selected">Email</option>
+        </select>
+        <br><br>
+       
+      </form>
+    </div>
+    <hr>
+    <br>
+
+    <div class="problem-section">
+       
+        <div class="container check-group">
+            <table>
+                <th class="primary"> <p>KINDLY SELECT NATURE OF PROBLEM</p></th>
+            <tr>
+                 <td>
+                  <label>HARDWARE
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                 <td>
+                    <label>NETWORK
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                 </td>
+
+                 <td>
+                    <label>MARINE
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                 </td>
+            </tr>
+
+         <tr>
+                 <td>
+                    <label>EMAIL
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label>PHONE
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+
+                <td>
+                    <label>PRINTER
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+        </tr>
+
+        <tr>
+                <td>
+                        <label> OFFICE APP
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                </td>
+                <td>
+                        <label>AGENCY
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                </td>
+        <td>
+                        <label>OTHERS
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+        </td>
+        </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+
+    <div>
+     <label for="LogDate"> Date Logged:</label>
+     <input type="date" id="LogDtae" name="LogDate">
+    </div>
+
+    <div>
+        <label for="LogTime">Time Logged:</label>
+         <input type="time" id="LogTime" name="LogTime">
+    </div>
+    <hr> 
+
+    <div>
+        <label for="User's Complain">User's Complain:</label> 
+        <textarea class="user complain">
+
+        </textarea>
+    </div>
+
+    <div>
+        <input type="radio" id="High" name="priority" value="High">
+        <label for="priority">High</label><br>
+        <input type="radio" id="Medium" name="priority" value="Medium">
+        <label for="priority">Medium</label><br>
+        <input type="radio" id="Low" name="priority" value="Low">
+        <label for="priority">Low</label><br>
+    </div>
+    <hr>
+
+    <div class="contact">
+        <label for="Phone number/ Ext"> Phone Number</label><br>
+        <input type="text" id=" Phone" name="phone" value="text">
+    </div>
+       
+    <div>
+        Location: <select name="Location" id="Location">
+            <option value="" class="form-control" selected="selected">Location</option>
+          </select>
+    </div>
+
+    <hr>
+    <h3 class="text-danger">IT IS ADVISED TO UPLOAD SCREENSHOT FOR CLEARER UNDERSTANDING</h3>
+    <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">  
+      </form>
+      <hr>
+      <br>
+      <input type="submit">
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
